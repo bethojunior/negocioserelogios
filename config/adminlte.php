@@ -15,8 +15,8 @@ return [
     */
 
     'title' => 'Negócios e Relógios',
-    'title_prefix' => 'Negócios e Relógios',
-    'title_postfix' => 'Negócios e Relógios',
+    'title_prefix' => '',
+    'title_postfix' => '',
 
     /*
     |--------------------------------------------------------------------------
@@ -46,7 +46,7 @@ return [
     */
 
     'logo' => '<b>Negócios e Relógios</b>',
-    'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
+    'logo_img' => 'assets/images/logo/logo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
