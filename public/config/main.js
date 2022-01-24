@@ -15,3 +15,14 @@ function getEnvironment(){
 const VERSION   = 'v1.0';
 const HOST = getEnvironment();
 const PATH_IMAGE = HOST.name+'storage/profiles/';
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+});
+
+$(document).ready(function(){
+$('.sidenav').sidenav();
+});

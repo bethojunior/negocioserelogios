@@ -1,0 +1,33 @@
+.main-nav.center{
+    position: absolute;
+    background-color: transparent;
+    color: #A59572;
+    height: auto;
+    padding-top: 1vw;
+}
+.main-nav.center img.logo{
+    width: 8vw;
+}
+.sidenav-trigger.main-nav-mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-nav.center{
+        display: none;
+    }
+    .sidenav-trigger.main-nav-mobile{
+        display: block;
+        position: absolute;
+        color: #A59572;
+        z-index: 9999;
+    }
+    #slide-out.sidenav div.footer-social{
+        padding-left: 2vw;
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 18vw;
+        left: 0;
+    }
+}
