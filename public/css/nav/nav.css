@@ -1,10 +1,45 @@
 .main-nav.center{
-    position: absolute;
     background-color: transparent;
     color: #A59572;
     height: auto;
     padding-top: 1vw;
+    position: absolute;
 }
+
+.main-nav.center .relative .absolute{
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.main-nav.center .relative .absolute{
+    right: 0;
+    bottom: 0;
+    display: flex;
+    cursor: pointer;
+    padding-right: 1vw;
+    color: burlywood;
+}
+
+.main-nav.center .relative .absolute i{
+    margin-top: 0.3vw;
+    color: burlywood;
+}
+
+.main-nav.center.nav-fixed .relative .absolute{
+    right: 0;
+    bottom: 0;
+    color: #A59572;
+    display: flex;
+    cursor: pointer;
+    padding-right: 1vw;
+    color: black;
+}
+
+.main-nav.center.nav-fixed .relative .absolute i{
+    margin-top: 0.3vw;
+    color: black;
+}
+
 
 .main-nav.center img.logo{
     width: 8vw;
@@ -13,6 +48,16 @@
 
 .sidenav-trigger.main-nav-mobile{
     display: none;
+}
+
+.main-text{
+    font-size: 3vw;
+    text-align: left;
+}
+
+.sub-main-text{
+    font-size: 3vw;
+    text-align: left;
 }
 
 .main-nav.center.nav-fixed{

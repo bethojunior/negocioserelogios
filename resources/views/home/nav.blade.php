@@ -1,5 +1,10 @@
 <nav id="main-nav" class="main-nav center">
     <img class="logo" src="{{ asset('assets/images/logo/logo-sem-fundo.png') }}" alt="">
+    <div class="relative">
+        <div class="absolute" id="search-product">
+            <i class="material-icons medium">search</i><span class="">Pesquisar</span>
+        </div>
+    </div>
 </nav>
 
 <ul id="slide-out" class="sidenav">
@@ -32,4 +37,15 @@
 
 <div class="row col l12 m12 s12">
     <video style="padding: 0; margin:0" class="col l12 m12 s12" id="nav-video" src="{{ asset('assets/images/watch.webm') }}" autoplay="" playsinline="" loop="" preload="auto"  muted="muted"></video>
+</div>
+
+{{-- Modal produtos --}}
+<div id="modal-search" class="modal bottom-sheet">
+    <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
 </div>

@@ -1,6 +1,8 @@
+elementProperty = new ElementProperty();
+
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
-    // var instances = M.Sidenav.init(elems, options);
+    $('.modal').modal();
 });
 
 $(document).ready(function(){
@@ -16,3 +18,7 @@ window.addEventListener("scroll", (event) => {
     $("#main-nav").addClass('nav-fixed');
     $("#main-nav").removeClass('nav-normal');
 });
+
+elementProperty.addEventInElement('#search-product','onclick',function(){
+    $('#modal-search').modal('open');
+})
