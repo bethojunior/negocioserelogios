@@ -8,3 +8,10 @@
     background-color: #093F6D!important;
     color: #fff!important;
 }
+.row{
+    padding: 0!important;
+}
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}

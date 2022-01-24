@@ -4,7 +4,10 @@
     @include('home.head')
 </head>
 <body>
-    @include('home.nav')
-    @include('home.js')
+    <div class="row col l12 m12 s12">
+        @include('home.nav')
+        @include('home.content')
+        @include('home.js')
+    </div>
 </body>
 </html>
