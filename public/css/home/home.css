@@ -1,0 +1,27 @@
+.row.col.l12.m12.s12 .text-align-center .material-icons.dp48.medium {
+    position: absolute;
+    animation-duration: 1s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.row.col.l12.m12.s12.arrow{
+    top: 0;
+    margin-top: -2vw;
+    height: 3vw;
+}
+
+.header{
+    /* font-family: 'Montserrat'; */
+}
+
+@keyframes slidein {
+    from {
+        margin-top: 2%;
+    }
+
+    to {
+        margin-top: 0%;
+    }
+}

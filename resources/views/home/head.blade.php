@@ -9,8 +9,10 @@
 
 <link rel="stylesheet" href="{{ asset('css/materialize.min.css') }}">
 <link rel="stylesheet" href="{{ asset('config/main.css') }}">
+{{-- <link rel="stylesheet" href="{{ asset('config/font.css') }}"> --}}
 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="{{ asset('css/home/home.css') }}">
 <link rel="stylesheet" href="{{ asset('css/nav/nav.css') }}">
 
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">

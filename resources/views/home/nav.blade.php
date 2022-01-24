@@ -1,4 +1,4 @@
-<nav class="main-nav center">
+<nav id="main-nav" class="main-nav center">
     <img class="logo" src="{{ asset('assets/images/logo/logo-sem-fundo.png') }}" alt="">
 </nav>
 

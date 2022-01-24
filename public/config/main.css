@@ -11,7 +11,6 @@
 .row{
     padding: 0!important;
 }
-body {
-    overflow-x: hidden;
-    overflow-y: hidden;
+.text-align-center{
+    text-align: center!important;
 }
