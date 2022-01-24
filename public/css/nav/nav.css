@@ -5,11 +5,31 @@
     height: auto;
     padding-top: 1vw;
 }
+
 .main-nav.center img.logo{
     width: 8vw;
+    transition: 1s;
 }
+
 .sidenav-trigger.main-nav-mobile{
     display: none;
+}
+
+.main-nav.center.nav-fixed{
+    position: fixed;
+    background-color: white;
+    height: 6vw;
+    transition: 1s;
+}
+
+.main-nav.center.nav-fixed img.logo{
+    width: 4vw;
+    transition: 0.4s;
+}
+
+.main-nav.center.nav-normal{
+    position: '';
+    background-color: transparent;
 }
 
 @media only screen and (max-width: 600px) {

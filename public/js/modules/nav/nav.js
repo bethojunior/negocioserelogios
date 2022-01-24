@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
+    // var instances = M.Sidenav.init(elems, options);
 });
 
 $(document).ready(function(){
@@ -9,10 +9,10 @@ $(document).ready(function(){
 
 window.addEventListener("scroll", (event) => {
     let scroll = this.scrollY;
-    if(scroll !== 0){
-        $("#main-nav").css( "background","white");
-        return $("#main-nav").css( "position","fixed");
+    if(scroll === 0){
+        $("#main-nav").addClass('nav-normal');
+        return $("#main-nav").removeClass('nav-fixed');
     }
-    $("#main-nav").css( "background","transparent");
-    $("#main-nav").css( "position","")
+    $("#main-nav").addClass('nav-fixed');
+    $("#main-nav").removeClass('nav-normal');
 });
