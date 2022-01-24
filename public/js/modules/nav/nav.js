@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 $(document).ready(function(){
     $('.sidenav').sidenav();
+    $('select').formSelect();
 });
 
 window.addEventListener("scroll", (event) => {
@@ -21,4 +22,9 @@ window.addEventListener("scroll", (event) => {
 
 elementProperty.addEventInElement('#search-product','onclick',function(){
     $('#modal-search').modal('open');
+
+})
+elementProperty.addEventInElement('#search-mobile','onclick',function(){
+    $('#modal-search').modal('open');
+    $('.sidenav').sidenav();
 })

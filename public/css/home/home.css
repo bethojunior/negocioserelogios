@@ -35,6 +35,10 @@
         text-align: center;
     }
 
+    .row.col.l12.m12.s12.arrow{
+        display: none;
+    }
+
 }
 
 

@@ -77,10 +77,25 @@
     background-color: transparent;
 }
 
+.sidenav li a {
+    font-family: 'Montserrat';
+}
+
 @media only screen and (max-width: 600px) {
+
+    .sidenav-trigger.main-nav-mobile{
+        color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding-top: 2vw;
+        padding-left: 2vw;
+    }
+
     .main-nav.center{
         display: none;
     }
+
     .sidenav-trigger.main-nav-mobile{
         display: block;
         position: absolute;

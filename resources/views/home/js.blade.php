@@ -4,3 +4,4 @@
 <script src="{{ asset('js/utils/SwalCustom.js') }}"></script>
 <script src="{{ asset('js/utils/ElementProperty.js') }}"></script>
 <script src="{{ asset('js/modules/nav/nav.js') }}"></script>
+<script src="{{ asset('js/modules/home/home.js') }}"></script>
