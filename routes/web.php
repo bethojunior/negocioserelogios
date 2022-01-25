@@ -25,7 +25,7 @@ Route::group(['prefix' => 'watchs'], function () {
     Route::group(['as' => 'watchs'], function () {
         Route::get('/',   [Watch\WatchController::class, 'index'])->name('.index');
         Route::get('/create',   [Watch\WatchController::class, 'create'])->name('.create');
-        Route::post('/store',   [Watch\WatchController::class, 'index'])->name('.store');
+        Route::post('/store',   [Watch\WatchController::class, 'store'])->name('.store');
         Route::put('/{id}',   [Watch\WatchController::class, 'update'])->name('.update');
     });
 });

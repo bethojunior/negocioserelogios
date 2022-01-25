@@ -7,7 +7,18 @@
 
 @section('content')
     <div class="row col-lg-12 col-md-12 col-sm-12">
-        {{ $watchs }}
+        @foreach($watchs as $item)
+            <div class="card col-lg-3 col-md-12 col-sm-12" style="margin: 3px">
+                <img src="{{url('/storage').'/'.$item->image }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <b>
+                        <h5 class="card-title">{{ $item->name }}</h5>
+                    </b>
+                    <p class="card-text">{{ $item->description }}</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        @endforeach
     </div>
 @stop
 

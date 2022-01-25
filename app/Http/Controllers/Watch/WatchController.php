@@ -53,11 +53,11 @@ class WatchController extends Controller
             $this->service
                 ->create($request->all());
         }catch (\Exception $exception){
-            return redirect()->route('watchs.index')->with([
+            return redirect()->route('watchs.create')->with([
                 'error' => 'Erro ao inserir produto '.$request->name.' '.$exception->getMessage()
             ]);
         }
-        return redirect()->route('watchs.index')->with([
+        return redirect()->route('watchs.create')->with([
             'success' => 'Produto '.$request->name.' inserido com sucesso'
         ]);
     }

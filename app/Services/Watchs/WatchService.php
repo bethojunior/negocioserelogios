@@ -6,6 +6,7 @@ use App\Models\Watch\Watchs;
 use App\Repositories\Watchs\WatchRepository;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 
 class WatchService
 {
@@ -35,13 +36,23 @@ class WatchService
         return $users;
     }
 
+    /**
+     * @param array $params
+     * @return Watchs|\Exception
+     *
+     */
     public function create(array $params)
     {
         try{
+            DB::beginTransaction();
             $insert = new Watchs($params);
-            $this->repository->save($insert);
+            $insert->save();
+            $image = Storage::disk('public')->putFile('watch-'.$insert->id, $insert['image']);
+            $insert->update(['image' => $image]);
+            DB::commit();
         }catch (\Exception $exception)
         {
+            DB::rollBack();
             return $exception;
         }
 
