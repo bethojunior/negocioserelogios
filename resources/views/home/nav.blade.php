@@ -18,6 +18,7 @@
         <a href="#email"><span class="white-text email">contato@relogioenegocios.com.br</span></a>
         </div>
     </li>
+    <li><a id="search-mobile">Pesquisar</a></li>
     <li><a href="#!">Mais acessados</a></li>
     <li><a href="#!">Novidades</a></li>
     <li><a href="#!">Relógios masculinos</a></li>
@@ -35,17 +36,33 @@
 <a href="#" data-target="slide-out" class="sidenav-trigger main-nav-mobile"><i class="material-icons">menu</i></a>
 
 
-<div class="row col l12 m12 s12">
+<div class="row col l12 m12 s12 ">
     <video style="padding: 0; margin:0" class="col l12 m12 s12" id="nav-video" src="{{ asset('assets/images/watch.webm') }}" autoplay="" playsinline="" loop="" preload="auto"  muted="muted"></video>
 </div>
 
 {{-- Modal produtos --}}
 <div id="modal-search" class="modal bottom-sheet">
     <div class="modal-content">
-        <h4>Modal Header</h4>
-        <p>A bunch of text</p>
+        <h4 class="font-default">Busque seu produto pela marca</h4>
+        <hr>
+        {{-- <p>A bunch of text</p> --}}
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span>Rolex</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox"/>
+                <span>Breitling</span>
+              </label>
+            </p>
+            <input class="btn" type="submit" value="Pesquisar">
+          </form>
     </div>
     <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
     </div>
 </div>
