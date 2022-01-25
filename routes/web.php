@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Watch;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,3 +20,12 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::group(['prefix' => 'watchs'], function () {
+    Route::group(['as' => 'watchs'], function () {
+        Route::get('/',   [Watch\WatchController::class, 'index'])->name('.index');
+        Route::get('/create',   [Watch\WatchController::class, 'create'])->name('.create');
+        Route::post('/store',   [Watch\WatchController::class, 'index'])->name('.store');
+        Route::put('/{id}',   [Watch\WatchController::class, 'update'])->name('.update');
+    });
+});

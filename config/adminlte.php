@@ -225,7 +225,7 @@ return [
     */
 
     'menu' => [
-        ['header' => 'Gestão de candidatos'],
+        ['header' => 'Usuários'],
         [
             'text' => 'profile',
             'url'  => 'admin/settings',
@@ -236,43 +236,26 @@ return [
             'url'  => 'admin/settings',
             'icon' => 'fas fa-fw fa-lock',
         ],
+        ['header' => 'Gestão'],
         [
-            'text'    => 'multilevel',
+            'text'    => 'Produtos',
             'icon'    => 'fas fa-fw fa-share',
             'submenu' => [
                 [
-                    'text' => 'level_one',
-                    'url'  => '#',
+                    'text' => 'Inserir',
+                    'url'  => 'watchs/create',
                 ],
                 [
-                    'text'    => 'level_one',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'level_two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                [
-                    'text' => 'level_one',
-                    'url'  => '#',
+                    'text' => 'Listagem',
+                    'url'  => 'watchs',
                 ],
             ],
+        ],
+        ['header' => 'Textos do site'],
+        [
+            'text' => 'change_password',
+            'url'  => 'admin/settings',
+            'icon' => 'fas fa-fw fa-lock',
         ],
     ],
 
