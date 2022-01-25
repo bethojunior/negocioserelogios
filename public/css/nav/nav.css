@@ -32,12 +32,12 @@
     display: flex;
     cursor: pointer;
     padding-right: 1vw;
-    color: black;
+    color: #A59572;
 }
 
 .main-nav.center.nav-fixed .relative .absolute i{
     margin-top: 0.3vw;
-    color: black;
+    color: #A59572;
 }
 
 
