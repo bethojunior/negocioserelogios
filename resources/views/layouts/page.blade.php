@@ -1,12 +1,11 @@
 @extends('adminlte::page')
 
-<meta name="description" content="" />
-<meta property="og:title" content="" />
+<meta property="og:title" content="Negócios e Relógios" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="" />
-<meta property="og:image" content="" />
-<meta property="og:description" content="" />
-<meta property="og:site_name" content="" />
+<meta property="og:url" content="https://negocioserelogios.com.br/" />
+<meta property="og:image" content="{{ asset('assets/images/logo/logo.png') }}" />
+<meta property="og:description" content="Relógios para homens de negócio" />
+<meta property="og:site_name" content="Negócios e Relógios" />
 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="{{ asset('config/main.css') }}">

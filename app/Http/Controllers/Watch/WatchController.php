@@ -62,9 +62,23 @@ class WatchController extends Controller
         ]);
     }
 
-    public function delete()
+    /**
+     * @param int $id
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function delete(int $id)
     {
-
+        try{
+            $this->service
+                ->delete($id);
+        }catch (\Exception $exception){
+            return redirect()->route('watchs.index')->with([
+                'error' => 'Erro ao inserir deletar produto'.$exception->getMessage()
+            ]);
+        }
+        return redirect()->route('watchs.index')->with([
+            'success' => 'Produto deletado com sucesso'
+        ]);
     }
 
     /**
