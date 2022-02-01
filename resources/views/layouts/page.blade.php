@@ -4,7 +4,8 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://negocioserelogios.com.br/" />
 <meta property="og:image" content="{{ asset('assets/images/logo/logo.png') }}" />
-<meta property="og:description" content="Relógios para homens de negócio" />
+<meta name="og:description" content="Relógios para homens de negócio" />
+<meta name="description" content="Relógios para homens de negócio" />
 <meta property="og:site_name" content="Negócios e Relógios" />
 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
