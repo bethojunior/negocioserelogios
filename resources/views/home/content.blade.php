@@ -13,5 +13,7 @@
             Descubra a coleção Rolex de relógios prestigiosos e de alta precisão. A Rolex oferece uma vasta gama de relógios Oyster Perpetual e Cellini que se adaptam a qualquer pulso. Descubra a ampla seleção de relógios Rolex: uma combinação perfeita de funcionalidade e estilo.
         </label>
     </div>
-    <div class="col l2 m2 s12">&nbsp;</div>
+    <div class="col l2 m2 s12">
+
+    </div>
  </div>

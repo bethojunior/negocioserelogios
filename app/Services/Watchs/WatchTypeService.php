@@ -2,7 +2,11 @@
 
 namespace App\Services\Watchs;
 
+use App\Models\Watch\Watchs;
+use App\Models\Watch\WatchTypes;
 use App\Repositories\Watchs\WatchTypeRepository;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 
 class WatchTypeService
 {
@@ -22,5 +26,25 @@ class WatchTypeService
     public function all()
     {
         return $this->repository->all();
+    }
+
+    /**
+     * @param array $data
+     * @return WatchTypes|\Exception
+     */
+    public function create(array $data)
+    {
+        try{
+            DB::beginTransaction();
+            $insert = new WatchTypes($data);
+            $insert->save();
+            DB::commit();
+        }catch (\Exception $exception)
+        {
+            DB::rollBack();
+            return $exception;
+        }
+
+        return $insert;
     }
 }

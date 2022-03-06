@@ -29,3 +29,12 @@ Route::group(['prefix' => 'watchs'], function () {
         Route::put('/{id}',   [Watch\WatchController::class, 'update'])->name('.update');
     });
 });
+
+Route::group(['prefix' => 'type'], function () {
+    Route::group(['as' => 'type'], function () {
+        Route::get('/',   [Watch\WatchTypeController::class, 'index'])->name('.index');
+        Route::get('/create',   [Watch\WatchTypeController::class, 'create'])->name('.create');
+        Route::post('/store',   [Watch\WatchTypeController::class, 'store'])->name('.store');
+        Route::put('/{id}',   [Watch\WatchTypeController::class, 'update'])->name('.update');
+    });
+});

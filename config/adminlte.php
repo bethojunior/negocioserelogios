@@ -240,11 +240,24 @@ return [
                 ],
             ],
         ],
+        [
+            'text'    => 'Marcas',
+            'icon'    => 'fas fa-fw fa-share',
+            'submenu' => [
+                [
+                    'text' => 'Inserir',
+                    'url'  => 'type/create',
+                ],
+                [
+                    'text' => 'Listagem',
+                    'url'  => 'type',
+                ],
+            ],
+        ],
         ['header' => 'Textos do site'],
         [
-            'text' => 'change_password',
+            'text' => 'Página principal',
             'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
         ],
     ],
 

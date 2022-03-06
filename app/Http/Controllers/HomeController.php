@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Services\Watchs\WatchService;
+use App\Services\Watchs\WatchTypeService;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -11,8 +13,18 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
+
+    private $watchService;
+    private $watchTypeService;
+
+    /**
+     * @param WatchService $watchService
+     * @param WatchTypeService $watchTypeService
+     */
+    public function __construct(WatchService $watchService, WatchTypeService $watchTypeService)
     {
+        $this->watchService = $watchService;
+        $this->watchTypeService = $watchTypeService;
         $this->middleware('auth');
     }
 
@@ -23,6 +35,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $watchTypes = $this->watchTypeService
+            ->all();
+        $watchs = $this->watchService
+            ->list();
+        return view('home')->with($watchs,$watchTypes);
     }
 }
