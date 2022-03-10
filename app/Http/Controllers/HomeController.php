@@ -39,6 +39,6 @@ class HomeController extends Controller
             ->all();
         $watchs = $this->watchService
             ->list();
-        return view('home')->with($watchs,$watchTypes);
+        return view('home')->with([$watchs,$watchTypes]);
     }
 }
