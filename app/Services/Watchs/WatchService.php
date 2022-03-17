@@ -26,14 +26,14 @@ class WatchService
     public function list()
     {
         try{
-            $users = $this->repository
+            $item = $this->repository
                 ->list();
         }catch (\Exception $exception)
         {
             return $exception;
         }
 
-        return $users;
+        return $item;
     }
 
     /**

@@ -1,3 +1,31 @@
+.btn-float{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 1vw;
+    margin-right: 1vw;
+}
+.card{
+    margin: 0.5vw;
+    border-radius: 0.3vw;
+}
+.card img{
+    margin: 0.5vw;
+}
+.card .card-reveal {
+    padding: 24px;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    overflow-y: auto;
+    left: 0;
+    top: 100%;
+    height: 100%;
+    z-index: 3;
+    display: none;
+    opacity: 0.7!important;
+}
+
 .row.col.l12.m12.s12 .text-align-center .material-icons.dp48.medium {
     color: #A59572;
     position: absolute;
@@ -26,6 +54,11 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .card{
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+        border-radius: 0.3vw;
+    }
 
     .row.col.l12.m12.s12 .text-align-center .material-icons.dp48.medium {
         display: none;

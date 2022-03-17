@@ -25,7 +25,7 @@ class HomeController extends Controller
     {
         $this->watchService = $watchService;
         $this->watchTypeService = $watchTypeService;
-        $this->middleware('auth');
+//        $this->middleware('auth');
     }
 
     /**
@@ -41,4 +41,20 @@ class HomeController extends Controller
             ->list();
         return view('home')->with([$watchs,$watchTypes]);
     }
+
+    /**
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
+    public function main()
+    {
+        $watchTypes = $this->watchTypeService
+            ->all();
+        $watch = $this->watchService
+            ->list();
+        return view('home.welcome')->with([
+            'watch' => $watch,
+            'type' => $watchTypes
+        ]);
+    }
+
 }

@@ -47,18 +47,14 @@
         <hr>
         {{-- <p>A bunch of text</p> --}}
         <form action="#">
-            <p>
-              <label>
-                <input type="checkbox" />
-                <span>Rolex</span>
-              </label>
-            </p>
-            <p>
-              <label>
-                <input type="checkbox"/>
-                <span>Breitling</span>
-              </label>
-            </p>
+            @foreach($type as $item)
+                <p>
+                    <label>
+                        <input type="checkbox" />
+                        <span>{{ $item->name }}</span>
+                    </label>
+                </p>
+            @endforeach
             <input class="btn" type="submit" value="Pesquisar">
           </form>
     </div>

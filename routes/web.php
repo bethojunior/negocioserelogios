@@ -13,9 +13,7 @@ use App\Http\Controllers\Watch;
 |
 */
 
-Route::get('/', function () {
-    return view('home.welcome');
-});
+Route::get('/', [App\Http\Controllers\HomeController::class, 'main'])->name('main');
 
 Auth::routes();
 
